@@ -1,13 +1,62 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+.App {
+  margin-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.header-container {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-container button {
+  background-color: rgb(75, 175, 237);
+  padding: 0.5rem;
+  width: 120px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.add-employee-container {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-employee-container label {
+  font-weight: 600;
+}
+
+.add-employee-container input {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.add-employee-container button {
+  width: 100%;
+  background-color: rgb(75, 175, 237);
+  padding: 0.5rem;
+  border-radius: 8px;
 }

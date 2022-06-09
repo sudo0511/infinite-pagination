@@ -1,0 +1,82 @@
+{
+  "company": {
+    "name": "ABC Private Ltd.",
+    "team": [
+      {
+        "name": "John Smith",
+        "designation": "CEO",
+        "id": "jsmith",
+        "email": "john_smith@abc.com",
+        "phoneNumber": "8795111343",
+        "team": [
+          {
+            "name": "Christine Jones",
+            "designation": "HR/Head of Staff",
+            "id": "cjones",
+            "email": "christine_jones@abc.com",
+            "phoneNumber": "78965311",
+            "team": [
+              [
+                {
+                  "name": "Neha Gupta",
+                  "designation": "Team lead",
+                  "id": "ngupta",
+                  "email": "neha_gupta@abc.com",
+                  "phoneNumber": "7984432131"
+                },
+                {
+                  "name": "Akshay Kumar",
+                  "designation": "Team member",
+                  "id": "akumar10",
+                  "email": "akshay_kumar@abc.com",
+                  "phoneNumber": "6325698411"
+                }
+              ],
+              [
+                {
+                  "name": "Arun Gupta",
+                  "designation": "Team lead",
+                  "id": "ngupta",
+                  "email": "neha_gupta@abc.com",
+                  "phoneNumber": "7984432131"
+                },
+                {
+                  "name": "Vaibhav Kumar",
+                  "designation": "Team member",
+                  "id": "akumar10",
+                  "email": "akshay_kumar@abc.com",
+                  "phoneNumber": "6325698411"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Saurabh Suri",
+            "designation": "Head Engineering",
+            "id": "ssuri",
+            "email": "saurabh_suri@abc.com",
+            "phoneNumber": "6325698",
+            "team": [
+              [
+                {
+                  "name": "Sudhanshu Sharma",
+                  "designation": "Team lead",
+                  "id": "ssharma",
+                  "email": "sudhanshu_sharma@abc.com",
+                  "phoneNumber": "7984432131"
+                },
+                {
+                  "name": "Vipin Pandey",
+                  "designation": "Team member",
+                  "id": "vpandey",
+                  "email": "vipin_pandey@abc.com",
+                  "phoneNumber": "6325698411"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
