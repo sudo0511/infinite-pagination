@@ -9,6 +9,7 @@ const AddEmployee = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(name, id, designation, email, phoneNumber);
   };
   return (
     <div className="add-employee-container">

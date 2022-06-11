@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 .App {
   margin-top: 20px;
@@ -33,7 +34,7 @@ button:hover {
 }
 
 .add-employee-container {
-  width: 100%;
+  width: 600px;
   background-color: whitesmoke;
   padding: 10px;
   margin: 0 auto;
@@ -59,4 +60,22 @@ button:hover {
   background-color: rgb(75, 175, 237);
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+.view-container {
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  width: 500px;
+}
+
+.view-item {
+  display: flex;
+  gap: 20px;
+}
+
+.view-item button {
+  width: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
