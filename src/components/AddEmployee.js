@@ -1,15 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import CompanyContext from "../context/CompanyContext";
 
 const AddEmployee = () => {
+  const { data, addEmployee } = useContext(CompanyContext);
+
+  // console.log(data, addEmployee);
   const [name, setName] = useState("");
   const [id, setId] = useState("");
   const [designation, setDesignation] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [category, setCategory] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, id, designation, email, phoneNumber);
+    console.log(name, id, designation, email, phoneNumber, category);
+    const newEmployee = {
+      name,
+      id,
+      designation,
+      email,
+      phoneNumber,
+    };
+    addEmployee(newEmployee);
+    setName("");
+    setId("");
+    setDesignation("");
+    setEmail("");
+    setPhoneNumber("");
   };
   return (
     <div className="add-employee-container">
@@ -54,6 +72,19 @@ const AddEmployee = () => {
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
         <br />
+        <label htmlFor="category">Team Category : </label>
+        <select
+          value={category}
+          name="category"
+          id="category"
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option></option>
+          <option value="HR/Head of Staff">HR/Head of Staff</option>
+          <option value="Head Engineering">Head Engineering</option>
+        </select>
+        {category === "HR/Head of Staff"}
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -61,3 +92,13 @@ const AddEmployee = () => {
 };
 
 export default AddEmployee;
+
+const teamSelector = (
+  <>
+    <label>Select Team Number : </label>
+    <select>
+      <option></option>
+      <option></option>
+    </select>
+  </>
+);

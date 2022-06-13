@@ -1,4 +1,5 @@
-import React, { useEffect, useState, createContext } from "react";
+import React, { useEffect, useState, createContext, useReducer } from "react";
+import AppReducer from "../features/AppReducer";
 
 const CompanyContext = createContext();
 
@@ -20,10 +21,14 @@ export const CompanyProvider = (props) => {
     return response;
   };
 
-  // console.log(data);
+  const [state, dispatch] = useReducer(AppReducer, data?.company?.team);
+
+  const addEmployee = (payload) => {
+    dispatch({ type: "ADD_EMPLOYEE", payload });
+  };
 
   return (
-    <CompanyContext.Provider value={{ data }}>
+    <CompanyContext.Provider value={{ data: data?.company, addEmployee }}>
       {props.children}
     </CompanyContext.Provider>
   );

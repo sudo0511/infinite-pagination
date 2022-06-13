@@ -55,6 +55,12 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+.add-employee-container select {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+
 .add-employee-container button {
   width: 100%;
   background-color: rgb(75, 175, 237);
