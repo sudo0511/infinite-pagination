@@ -1,87 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Heebo", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.App {
-  margin-top: 20px;
-  font-family: sans-serif;
+h2 {
   text-align: center;
-}
-.header-container {
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.header-container button {
-  background-color: rgb(75, 175, 237);
-  padding: 0.5rem;
-  width: 120px;
-  border-radius: 8px;
+  padding: 1rem;
 }
 
-button:hover {
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-bottom: 5px;
+  background-color: aliceblue;
+  border: 1px solid rgb(198, 187, 187);
+}
+
+.list-container:nth-child(2n + 1) {
   background-color: lightblue;
 }
 
-.add-employee-container {
-  width: 600px;
-  background-color: whitesmoke;
-  padding: 10px;
-  margin: 0 auto;
-  text-align: center;
+.page-nav-container {
   display: flex;
-  align-items: center;
+  margin: 1rem 0px;
   justify-content: center;
-  flex-direction: column;
 }
 
-.add-employee-container label {
-  font-weight: 600;
-}
-
-.add-employee-container input {
-  width: 100%;
-  padding: 0.3rem;
-  margin-bottom: 1rem;
-}
-
-.add-employee-container select {
-  width: 100%;
-  padding: 0.3rem;
-  margin-bottom: 1rem;
-}
-
-.add-employee-container button {
-  width: 100%;
-  background-color: rgb(75, 175, 237);
-  padding: 0.5rem;
-  border-radius: 8px;
-}
-
-.view-container {
-  /* border: 1px solid black; */
-  margin: 10px auto;
-  width: 500px;
-}
-
-.view-item {
-  display: flex;
-  gap: 20px;
-}
-
-.view-item button {
-  width: 30px;
-  border: none;
-  background: none;
+.page-nav-container button {
+  padding: 5px 6px;
   cursor: pointer;
+  border: 1px solid rgb(211, 200, 200);
+}
+.page-nav-container button:nth-child(2) {
+  padding: 5px 12px;
+}
+
+.page-nav-container button:hover {
+  background-color: rgb(199, 213, 226);
+}
+
+.loading-div {
+  width: 100%;
+  text-align: center;
 }
